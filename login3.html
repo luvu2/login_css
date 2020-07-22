@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <style>
+        * {
+            background-color: lightpink;
+        }
+
+        .logo {
+            margin-bottom: 100px;
+            width: 400px;
+            height: 40px;
+        }
+
+        .box {
+            margin-left: 500px;
+            margin-top: 100px;
+            padding-top: 5px;
+            background-color: snow;
+            width: 400px;
+            height: 40px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="logo">
+    </div>
+    <form action="https://server.ai-school.com" method="POST">
+            <label for="userid_input"></label>
+            <input
+                class="box"
+                id="userid_input"  
+                type="text"
+                name="userid"
+                placeholder="아이디를 입력하세요"
+            />
+            <label for="userpw_input"></label>
+            <input 
+                class="box" 
+                type="password"
+                name="userpw"
+                placeholder ="비밀번호를 입력하세요"
+            />
+            <label for="pw_question"></label>
+            <select name="password" class="box">
+                <option value="question1">보물 1호는?</option>
+                <option value="question2">초등학교 이름은?</option>
+            </select>
+            <label for="content_input"></label>
+                <textarea name="content" class="box">
+                    내용을 입력하세요.
+                </textarea>
+                <button name="전송" type="submit" class="box">전송하기</button>
+
+    </form>
+</body>
+</html>
